@@ -1,0 +1,183 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #eef3f7;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #0a3d62;
+  color: #fff;
+}
+.logo { font-size: 1.5rem; font-weight: bold; }
+.nav-links { list-style: none; display: flex; gap: 1.5rem; }
+.nav-links a { color: #fff; text-decoration: none; font-weight: 500; }
+.cart-icon { cursor: pointer; font-size: 1.2rem; }
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('https://t3.ftcdn.net/jpg/04/65/46/52/360_F_465465254_1pN9MGrA831idD6zIBL7q8rnZZpUCQTy.webp') no-repeat center/cover;
+  background-size: cover;
+  color: white;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+.hero .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background: #ff6b6b;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.hero .btn:hover {
+  background: #ff3b3b;
+  transform: scale(1.05);
+}
+/* ===== Products ===== */
+.products { padding: 2rem; text-align: center; }
+.products h2 { margin-bottom: 1rem; font-size: 2rem; }
+.product-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.product {
+  background: white;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.product img { max-width: 100%; border-radius: 10px; }
+.product h3 { margin-top: 0.8rem; font-size: 1.1rem; color: #0a3d62; }
+.product p { font-weight: 600; color: #ff6b6b; margin: 0.5rem 0; }
+.product button {
+  margin-top: auto;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  background: #0a3d62;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+.product button:hover {
+  background: #3c6382;
+  transform: scale(1.05);
+}
+
+/* Best Deals */
+.best-deals {
+  position: relative;
+  background: url('https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074076.jpg') no-repeat center/cover;
+  height: 300px; display: flex; align-items: center; justify-content: center;
+}
+.best-deals .overlay {
+  background: rgba(0,0,0,0.6); padding: 2rem; border-radius: 10px; text-align: center;
+  color: white;
+}
+.best-deals h2 { font-size: 2rem; margin-bottom: 1rem; }
+
+/* About */
+.about { padding: 2rem; background: #fff; text-align: center; }
+.about h2 { margin-bottom: 1rem; }
+
+/* Contact */
+.contact { padding: 2rem; background: #f4f4f4; text-align: center; }
+.contact h2 { margin-bottom: 1rem; }
+
+/* Cart Modal */
+.cart-modal {
+  display: none; position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%; background: rgba(0,0,0,0.5);
+}
+.cart-content {
+  background: white; margin: 10% auto; padding: 2rem;
+  width: 400px; border-radius: 10px; position: relative;
+}
+.close { position: absolute; right: 1rem; top: 1rem; cursor: pointer; font-size: 1.5rem; }
+.checkout-btn {
+  margin-top: 1rem; padding: 0.7rem 1.5rem; background: #ff6b6b;
+  color: white; border: none; border-radius: 5px; cursor: pointer;
+  transition: background 0.3s;
+}
+.checkout-btn:hover { background: #ff3b3b; }
+
+/* Footer */
+footer { text-align: center; padding: 1rem; background: #0a3d62; color: #fff; margin-top: 2rem; }
+/* Best Deals */
+.best-deals {
+  position: relative;
+  background: url('https://img.freepik.com/premium-photo/top-view-online-shopping-concept-with-credit-card-smart-phone-computer-isolated-office-yellow-table-background_315337-3591.jpg') no-repeat center/cover;
+  background-size: cover; /* ensures full coverage */
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.best-deals .overlay {
+  background: rgba(0,0,0,0.5); /* semi-transparent overlay for readability */
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.best-deals h2 { font-size: 2rem; margin-bottom: 1rem; }
+.best-deals p { font-size: 1.1rem; }
+/* About Section as a Box */
+.about {
+  padding: 2rem;
+  display: flex;
+  justify-content: center; /* center the box */
+  background: #eef3f7;
+}
+
+.about-box {
+  background: white;
+  padding: 2rem;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Contact Section as simple text */
+.contact {
+  padding: 2rem;
+  text-align: center;
+  background: #f4f4f4;
+}
+.contact h2 {
+  margin-bottom: 1rem;
+}
+.contact p {
+  margin-bottom: 0.5rem;
+}

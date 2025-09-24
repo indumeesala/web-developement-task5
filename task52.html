@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase | E-Commerce</title>
+  <link rel="stylesheet" href="task52.css">
+  <script src="task52.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">ShopEase</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#best-deals">Best Deals</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+  <h1>Discover the Best Deals</h1>
+  <p>Shop the latest trends at unbeatable prices.</p> 
+  <a href="#products" class="btn">Shop Now</a>
+</section>
+  <!-- Product Section -->
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <!-- 11 Products -->
+      <div class="product">
+        <img src="https://www.boat-lifestyle.com/cdn/shop/files/Artboard1_ac192d39-3b63-4a80-a049-73e0a6c2b149.png?v=1728871112" alt="Headphones">
+        <h3>Wireless Headphones</h3>
+        <p>$49.99</p>
+        <button onclick="addToCart('Wireless Headphones', 49.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://qonooz.com/wp-content/uploads/2023/03/61LDZXdUwL._SL1200_.jpg" alt="Watch">
+        <h3>Smart Watch</h3>
+        <p>$79.99</p>
+        <button onclick="addToCart('Smart Watch', 79.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://www.boat-lifestyle.com/cdn/shop/files/Stone_SpinXPro_1.png?v=1709717404" alt="Speaker">
+        <h3>Bluetooth Speaker</h3>
+        <p>$39.99</p>
+        <button onclick="addToCart('Bluetooth Speaker', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/81HhqivXtRL._UY1000_.jpg" alt="Shoes">
+        <h3>Running Shoes</h3>
+        <p>$59.99</p>
+        <button onclick="addToCart('Running Shoes', 59.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl66wFTTtNqQLzutPvRU56o6yBl4OrIIeL6A&s" alt="Backpack">
+        <h3>Travel Backpack</h3>
+        <p>$89.99</p>
+        <button onclick="addToCart('Travel Backpack', 89.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://poojaelectronics.in/storage/2023/08/Nikon-D7500-DSLR-Camera-with-18-140mm-Lens-Online-Buy-India_01-800x800.jpg" alt="Camera">
+        <h3>DSLR Camera</h3>
+        <p>$499.99</p>
+        <button onclick="addToCart('DSLR Camera', 499.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://5.imimg.com/data5/JJ/YQ/MY-59867677/apple-macbook-pro-laptop-500x500.jpg" alt="Laptop">
+        <h3>Laptop Pro</h3>
+        <p>$999.99</p>
+        <button onclick="addToCart('Laptop Pro', 999.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://www.glassesindia.com/cdn/shop/files/Black-Gold-Square-Pilot-Rimless-Sunglasses-1.jpg?v=1708406571" alt="Sunglasses">
+        <h3>Stylish Sunglasses</h3>
+        <p>$29.99</p>
+        <button onclick="addToCart('Stylish Sunglasses', 29.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://www.jiomart.com/images/product/original/rvdukxjtan/entwino-d1-gaming-mouse-for-laptop-gaming-pc-usb-wired-rgb-lights-optical-mouse-for-computer-product-images-orvdukxjtan-p594705374-0-202210202205.jpg?im=Resize=(1000,1000)" alt="Gaming Mouse">
+        <h3>Gaming Mouse</h3>
+        <p>$25.99</p>
+        <button onclick="addToCart('Gaming Mouse', 25.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71HCIiKPphL.jpg" alt="Tablet">
+        <h3>Android Tablet</h3>
+        <p>$199.99</p>
+        <button onclick="addToCart('Android Tablet', 199.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://shop.zebronics.com/cdn/shop/files/Zeb-Nitro-Plus-_ZEB-K4001M_-pic2.jpg?v=1734163061&width=1200" alt="Keyboard">
+        <h3>Mechanical Keyboard</h3>
+        <p>$69.99</p>
+        <button onclick="addToCart('Mechanical Keyboard', 69.99)">Add to Cart</button>
+      </div>
+    <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-m33-1.jpg" alt="smartphone">
+        <h3>Smart Phone</h3>
+        <p>$100.99</p>
+        <button onclick="addToCart('Android Tablet', 199.99)">Add to Cart</button>
+      </div>
+          </div>
+
+  </section>
+
+  <!-- Best Deals Section -->
+  <section id="best-deals" class="best-deals">
+    <div class="overlay">
+      <h2>🔥 Best Deals of the Season 🔥</h2>
+      <p>Grab exclusive discounts before they're gone!</p>
+      <a href="#products" class="btn">Explore Deals</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <!-- About Us -->
+<section id="about" class="about">
+  <div class="about-box">
+    <h2>About Us</h2>
+    <p>
+      Welcome to <strong>ShopEase</strong>, your one-stop destination for top-quality
+      products at unbeatable prices. We are dedicated to providing a seamless shopping
+      experience, combining convenience, affordability, and customer satisfaction.
+    </p>
+  </div>
+</section>
+
+<!-- Contact Us -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>📧 Email: support@shopease.com</p>
+  <p>📞 Phone: +91 98765 43210</p>
+  <p>📍 Address: Hyderabad, India</p>
+</section>
+
+  <!-- Cart Modal -->
+  <div class="cart-modal" id="cart-modal">
+    <div class="cart-content">
+      <span class="close" onclick="toggleCart()">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p class="total">Total: $<span id="cart-total">0.00</span></p>
+      <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ShopEase | All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
